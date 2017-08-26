@@ -1,0 +1,81 @@
+//HEADER----------------------------------------------
+header{
+  height: 170px;
+  width: 100%;
+  background-color: #4D88CD;
+  .top_header{
+    height: 50px;
+    width: 100%;
+    .logo{
+      width: 50%;
+      margin-right: 0px;
+      display: inline-block;
+      img{
+        margin: 12px;
+        margin-left: 50px;
+        height: 85px;
+        width: 100px;
+      }
+    }
+    .float_right{
+      width: 50%;
+      float: right;
+      img{
+        margin-top: 33px;
+        margin-right: 33px;
+        float: right;
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+  .nav{
+    margin-top: 75px;
+    a{
+      color: white;
+      text-decoration: none;
+      margin-left: 40px;
+    }
+  }
+}
+//FOOTER----------------------------------------------------
+footer{
+  width: 100%;
+  background-color: #4D88CD;
+  text-align: center;
+  padding-bottom: 20px;
+  .terms{
+    padding-top: 85px;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    p{
+      color: white;
+    }
+  }
+}
+//HOME PAGE CONTENT---------------------------------------------
+.content{
+  text-align: center;
+  h1{
+    color: #4D88CD;
+  }
+  p{
+    color: #4D88CD;
+  }
+  .center{
+    display: flex;
+    .row{
+      justify-content: center;
+      vertical-align: middle;
+      .col-sm-3{
+        img{
+          height: 175px;
+          width: 175px;
+          border-radius: 45px;
+        }
+      }
+    }
+  }
+}
