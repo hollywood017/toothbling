@@ -1,8 +1,23 @@
+//FONTS----------------------------------------------
+@font-face {
+    font-family: 'big_johnregular';
+    src: url('big_john-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'slim_joeregular';
+    src: url('slim_joe-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 //HEADER----------------------------------------------
 header{
   height: 170px;
   width: 100%;
-  background-color: #4D88CD;
+  background-color: rgba(77, 136, 205, 1);
   .top_header{
     height: 50px;
     width: 100%;
@@ -13,45 +28,57 @@ header{
       img{
         margin: 12px;
         margin-left: 50px;
-        height: 85px;
-        width: 100px;
+        height: 110px;
+        width: 125px;
       }
     }
     .float_right{
       width: 50%;
       float: right;
       img{
-        margin-top: 33px;
-        margin-right: 33px;
         float: right;
-        height: 35px;
-        width: 35px;
+        width: auto;
+        height: 110px;
       }
     }
   }
   .nav{
     margin-top: 75px;
-    a{
+    font-size: 19px;
+    .underline{
       color: white;
       text-decoration: none;
       margin-left: 40px;
+      font-family: Helvetica, Sans-Serif;
+    }
+    .line{
+      color: white;
+      text-decoration: underline;
+      margin-left: 40px;
+      font-family: Helvetica, Sans-Serif;
     }
   }
 }
 //FOOTER----------------------------------------------------
 footer{
   width: 100%;
-  background-color: #4D88CD;
+  background-color: rgba(77, 136, 205, 1);
   text-align: center;
   padding-bottom: 20px;
   .terms{
-    padding-top: 85px;
-    a{
+    img{
+      width: auto;
+      height: 90px;
+    }
+    padding-top: 30px;
+    .underline{
       color: white;
       text-decoration: none;
+      font-family: Helvetica, Sans-Serif;
     }
     p{
       color: white;
+      font-family: Helvetica, Sans-Serif;
     }
   }
 }
@@ -59,12 +86,18 @@ footer{
 .content{
   text-align: center;
   h1{
-    color: #4D88CD;
+    font-family: 'Lobster', cursive;
+    margin: 50px 0px;
+    color: #626567;
+    font-size: 46px;
   }
   p{
-    color: #4D88CD;
+    color: #626567;
+    font-family: Helvetica, Sans-Serif;
+    font-size: 22px;
   }
   .center{
+    margin: 40px 0px;
     display: flex;
     .row{
       justify-content: center;
@@ -74,6 +107,140 @@ footer{
           height: 175px;
           width: 175px;
           border-radius: 45px;
+        }
+        p{
+          margin-top: 55px;
+        }
+      }
+    }
+  }
+}
+//PRICE PAGE CONTENT---------------------------------------------
+.middle{
+  .price{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 115px;
+    h1{
+      color: #4D88CD;
+      font-family: 'Lobster', cursive;
+      font-size: 51px;
+    }
+  }
+  .row{
+    .centered{
+      margin-left: auto;
+      margin-right: auto;
+      display: inherit;
+      width: 70%;
+      text-align: center;
+      .cryst{
+        margin-right: 24px;
+        box-shadow: 7px 7px 12px grey;
+        padding: 0px;
+        h2{
+          color: #fff;
+          font-family: 'Lobster', cursive;
+          font-size: 38px;
+        }
+        .head{
+          border-bottom: 1px solid white;
+          background-color: rgba(35, 31, 32, .75);
+        }
+        .crystal{
+          border-top: 1px solid white;
+          background-color: rgba(77, 136, 205, 0.75);
+
+          text-align: left;
+          padding: 5%;
+          p{
+            color: #fff;
+            font-family: Helvetica, Sans-Serif;
+            font-size: 20px;
+            span{
+              float: right;
+            }
+          }
+        }
+        .gold{
+          text-align: left;
+          padding: 5%;
+          border-top: 1px solid white;
+          background-color: rgba(77, 136, 205, 0.75);
+          p{
+            color: #fff;
+            font-family: Helvetica, Sans-Serif;
+            font-size: 20px;
+            span{
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
+  .row{
+    .grillz{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+      margin-bottom: 130px;
+      background-color: rgba(77, 136, 205, 0.75);
+      width: 33%;
+      text-align: center;
+      padding-top: 1%;
+      box-shadow: 7px 7px 12px grey;
+      p{
+        color: #fff;
+        font-size: 20px;
+        font-family: Helvetica, Sans-Serif;
+      }
+    }
+  }
+}
+
+//FAQ PAGE CONTENT------------------------------------------------
+.container{
+  margin-bottom: 70px;
+  .faq{
+    text-align: center;
+    margin: 55px 0px;
+    h2{
+      color: #4D88CD;
+      font-family: 'Lobster', cursive;
+      font-size: 46px;
+    }
+  }
+  .row{
+    .centered{
+      .question_list{
+        margin-left: 25%;
+        .qa{
+          box-shadow: 7px 7px 12px grey;
+          .question{
+            padding-top: 2%;
+            padding-left: 3%;
+            background-color: rgba(35, 31, 32, .75);
+            border-bottom: 2px solid white;
+            p{
+              color: #fff;
+              font-family: Helvetica, Sans-Serif;
+              font-size: 20px;
+            }
+
+          }
+          .answer{
+            padding-top: 2%;
+            padding-left: 3%;
+            padding-bottom: 1%;
+            background-color: rgba(77, 136, 205, 0.75);
+            margin-bottom: 20px;
+            p{
+              color: #fff;
+              font-family: Helvetica, Sans-Serif;
+              font-size: 20px;
+            }
+          }
         }
       }
     }
