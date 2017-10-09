@@ -12,21 +12,15 @@ function submitForm(){
     if (!name.value || !email.value || !message.value) {
       alertify.error("Please make sure Form is completed");
     } else {
+      $.ajax({
+        url: "https://formspree.io/you@email.com",
+        method: "POST",
+        data: $(this).serialize(),
+        dataType: "json"
+      });
+
       event.preventDefault();
       $(this).get(0).reset();
       alertify.success("Message Sent");
     }
-
-  //insert EmailTo stuff
-  Email.send("from@you.com",
-    "to@them.com",
-    "This is a subject",
-    "this is the body",
-    "smtp.yourisp.com",
-    "username",
-    "password");
-
   }
-function formSuccess(){
-    $( "#msgSubmit" ).removeClass( "hidden" );
-}
