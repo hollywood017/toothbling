@@ -1,6 +1,4 @@
 $("#contactForm").submit(function(event){
-    // cancels the form submission
-    event.preventDefault();
     submitForm();
 });
 
@@ -10,7 +8,16 @@ function submitForm(){
     var email = $("#email").val();
     var message = $("#message").val();
 
-  //insert js stuff
+    //contact form verification
+    if (!name.value || !email.value || !message.value) {
+      alertify.error("Please make sure Form is completed");
+    } else {
+      event.preventDefault();
+      $(this).get(0).reset();
+      alertify.success("Message Sent");
+    }
+
+  //insert EmailTo stuff
   Email.send("from@you.com",
     "to@them.com",
     "This is a subject",
