@@ -13,7 +13,7 @@ function submitForm(){
     //contact form verification
     if (!form_name.value || !form_lastname.value || !form_email.value ||
       !form_phone.value || !form_message.value) {
-        
+
         alertify.error("Please make sure Form is completed");
 
     } else {
@@ -25,7 +25,6 @@ function submitForm(){
       });
 
       event.preventDefault();
-      $(this).get(0).reset();
       alertify.success("Message Sent");
     }
   }
