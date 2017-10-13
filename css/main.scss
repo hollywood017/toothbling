@@ -251,3 +251,21 @@ footer{
 .margin{
   margin-top: 6%;
 }
+.contact{
+  width: 50%;
+  margin-right: 15%;
+  form{
+    display: inline-block;
+  }
+}
+.side_col{
+  .contact_contents{
+    display: inline-block;
+    vertical-align: text-top;
+    margin-right: 43px;
+  }
+  .contact_deets{
+    display: inline-block;
+    vertical-align: text-top;
+  }
+}
